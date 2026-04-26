@@ -194,7 +194,7 @@ snakemake \
 
 ---
 
-## 8. Output files
+## 7. Output files
 
 The main output files are generated under:
 
@@ -234,7 +234,7 @@ results/DeepTMHMM/
 
 ---
 
-## 10. Directory structure
+## 8. Directory structure
 
 A typical working directory after running the workflow:
 
@@ -254,7 +254,7 @@ your_working_dir/
 
 ---
 
-## 11. Notes
+## 9. Notes
 
 1. DeepTMHMM requires patched `predict.py` and `utils.py` files when used inside this Snakemake workflow.
 
@@ -276,7 +276,7 @@ your_working_dir/
 
 ---
 
-## 12. Citation
+## 10. Citation
 
 If you use CSEPFinder, please cite the original tools used in this workflow:
 
