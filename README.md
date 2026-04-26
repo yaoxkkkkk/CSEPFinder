@@ -143,8 +143,6 @@ CSEPFinder_config.yaml
 A typical configuration includes:
 
 ```yaml
-ref: "your_reference_name"
-
 protein_file: "input/primary_transcripts.pep.fa"
 
 genome_file: ""
