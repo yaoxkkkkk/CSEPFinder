@@ -204,23 +204,29 @@ results/
 
 Key outputs include:
 
+Final CSEP candidate gene/protein IDs:
+
 ```text
 results/{ref}.CSEP.txt
 ```
 
-Final CSEP candidate gene/protein IDs.
+Final CSEP candidate protein sequences:
+
+```text
+results/{ref}.CSEP.fasta
+```
+
+Summary table of signal peptide cleavage-site or topology information predicted by different tools:
 
 ```text
 results/{ref}.CSEP_signal_peptide_sites.tsv
 ```
 
-Summary table of signal peptide cleavage-site or topology information predicted by different tools.
-
 Example format:
 
 ```text
 gene id    signalP          Phobius    Predisi    DeepTMHMM
-gene1      CS pos: 26-27    c20/21o    19         SSSSSSSSSOOOOOOO
+gene1      CS pos: 17-18	  c17/18o	   17         SSSSSSSSSOOOOOOO
 ```
 
 Tool-specific outputs include:
@@ -259,20 +265,6 @@ your_working_dir/
 1. DeepTMHMM requires patched `predict.py` and `utils.py` files when used inside this Snakemake workflow.
 
 2. SignalP6, PrediSi, Phobius and DeepTMHMM may require separate licenses or academic registration. Please install them according to their official instructions.
-
-3. GPU resources are only required for DeepTMHMM. Other steps can run on CPU nodes.
-
-4. If the workflow is interrupted, rerun with:
-
-```bash
---rerun-incomplete
-```
-
-5. Before large-scale execution, it is recommended to test the workflow with:
-
-```bash
---dry-run
-```
 
 ---
 
