@@ -2,17 +2,18 @@ protein_file: ""
 
 # Or
 genome_file: ""
-
 annotation_file: ""
 
 # Length filter
-max_length: 200
+max_length: 1000
 
 # Software configuration
 predisi_folder: ""
+deeptmhmm_folder: ""
 
 singularity: 
   AGAT_image: ""
 
 conda_env:
   signalP_env: ""
+  DeepTMHMM_env: ""
